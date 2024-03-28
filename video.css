@@ -1,0 +1,177 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 16px;
+  padding: 20px;
+  position: fixed;
+  top: 55px;
+  left: 195px;
+  background-color: rgb(246, 245, 245);
+}
+
+@media (max-width: 1200px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  };
+}
+
+@media (max-width: 800px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 14px;
+
+  }
+}
+
+@media (max-width: 1000px) {
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.video-card {
+  width: 100%;
+}
+
+.thumbnail-container {
+  position: relative;
+  display: block;
+}
+
+.thumbnail {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.video-time {
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+  position: absolute;
+  bottom: 12px;
+  right: 5px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  padding-top: 5px;
+  align-items: top;
+}
+
+.channel-profile-pic {
+  height: 36px;
+  border-radius: 18px;
+}
+
+.video-title {
+  padding-top: 7px;
+  font-size: 14px;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  width: 100%;
+  line-height: 20px;
+  margin-bottom: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.channel-name {
+  font-family: Roboto, Airal;
+  font-size: 12px;
+  color: #606060;
+  margin-bottom: 6px;
+  padding-top: 10px;
+}
+
+.video-stats {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  color: #606060;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.video-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.channel-name a {
+  text-decoration: none;
+  color: #606060;
+}
+
+.channel-profile-pic-container {
+  position: relative;
+}
+
+.channel-profile-pic-container .tooltip {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 200px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.channel-profile-pic-container .channel-profile-pic {
+  margin-top: 5px;
+}
+
+.channel-profile-pic-container:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip-channel-info {
+  padding-left: 10px;
+}
+
+.tooltip-channel-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tooltip-channel-stats {
+  font-size: 12px;
+  color: gray;
+}
+
+.video-grid {
+  overflow: scroll;
+  height: 87%;
+}
+
+@media (max-width: 1200px) {
+  .video-grid {
+    left: 75px;
+  }
+}
