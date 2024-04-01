@@ -120,6 +120,7 @@
 .my-channel {
   cursor: pointer;
   height: 32px;
+  border-radius: 16px;
 }
 
 .tooltip-container {
